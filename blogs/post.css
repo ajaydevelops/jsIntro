@@ -1,0 +1,9 @@
+ #BlogDetsBox {
+   margin-top: 100px;
+ }
+
+
+code {
+  display: flex;
+  flex-direction: column;
+}
