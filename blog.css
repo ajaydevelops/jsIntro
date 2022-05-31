@@ -1,12 +1,14 @@
-a {
-  text-decoration: none;
+#blogs {
+    margin-top: 100px;
 }
 
-.blogs {
-  margin-top: 50px;
-  box-shadow: 0px 0px 10px #bad8ed;
-  background-color: #c5c7d9;
-  color: #000;
-  border-radius: 10px;
-  padding: 5px 25px;
+.blog {
+    margin-bottom: 50px;
+    background-color: #c5c7d9;
+    box-shadow: 0px 0px 10px #bad8ed;
+    color: #000;
+    border-radius: 10px;
+    padding: 5px 25px;
 }
+
+

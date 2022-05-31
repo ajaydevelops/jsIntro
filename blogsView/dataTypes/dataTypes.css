@@ -1,0 +1,30 @@
+.dataTypsVu {
+    margin-top: 80px;
+}
+
+#categories {
+    display: flex;
+    justify-content: space-around;
+}
+
+.categorieHead {
+    font-size: 20px;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.dataTypsHead {
+    text-align: left;
+}
+
+.dataTyp {
+    margin-top: 60px;
+}
+
+.dataTypName {
+    font-size: 30px;
+}
+
+.diff {
+    margin-top: 60px;
+}

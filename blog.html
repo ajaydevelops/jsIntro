@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>AS | Blog</title>
-    <link rel="stylesheet" href="home.css"/>
-    <link rel="stylesheet" href="blog.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="container">
-      <header>
-        <nav id="headNav">
-	        <a id="headLinkA"  href="index.html">AS</a>
-          <a id="headLinkB" href="#">Blog</a>
-        </nav>   
-      </header>
-      <hr/>
-      <div id="blogBox">
-        <a href="blogs/variable.html">
-          <div class="blogs">
-            <h2>Variable in javaScript</h2>
-            <p>
-              Variable store single value and multiple values.
-            </p>
-            <p>02 Apr 2022</p> 
-          </div>
-        </a>
-      </div>
-      <footer>
-        <nav id="footerNav">
-          <a class="footerLinks" href="#">Linkedin</a>
-          <a class="footerLinks" href="https://www.github.com/ajaydevelops" target="_blank">Github</a>
-          <a class="footerLinks" href="https://www.twitter.com/ajaydevelops" target="_blank">Twitter</a>
-        </nav>
-        <p style="margin: 10px;">|</p>
-        <p>Copyright @ 2020. Ajay Singh. All rights reserved</p>
-      </footer>
-    </div>
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog | Home</title>
+        <link href="home.css" rel="stylesheet">
+        <linK href="blog.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav id="headNav">
+                    <a id="headLinkA"  href="index.html">AS</a>
+                    <a id="headLinkB" href="#">Blog</a>
+                </nav>   
+            </header>
+            <hr>
+            <div id="blogs">
+                <a href="blogsView/javaScript/javaScript.html">
+                    <div class="blog">
+                        <h2>javaScript.</h2>
+                        <p>Basic information about javaScript.</p>
+                        <p>16 Apr 2022</p>
+                    </div>
+                </a>
+                <a href="blogsView/variables/variables.html">
+                    <div class="blog">
+                        <h2>Variables in javaScript.</h2>
+                        <p>Information about variables and keywords.<br>Need of variables. Use of variables.</p>
+                        <p>16 Apr 2022</p> 
+                    </div>
+                </a>
+                <a href="blogsView/dataTypes/dataTypes.html">
+                    <div class="blog">
+                        <h2>Data Types in javaScript.</h2>
+                        <p>Information about data types. <br>Different between primitive data types and non-primitive data types. <br>Need of data types.</p>
+                        <p>19 Apr 2022</p>
+                    </div>
+                </a>
+                <!--
+                <a href="blogsView/operator/operator.html">
+                    <div class="blog">
+                        <h2>Operators in javaScript.</h2>
+                        <p>Information about operators.</p>
+                        <p>22 Apr 2022</p>
+                    </div>
+                </a> -->
+            </div>
+            <footer>
+                <nav id="footerNav">
+                    <a id="footerLinkA" class="footerLinks" href="#">Linkedin</a>
+                    <a class="footerLinks" href="https://www.github.com/ajaydevelops" target="_blank">Github</a>
+                    <a class="footerLinks" href="https://www.twitter.com/ajaydevelops" target="_blank">Twitter</a>
+                </nav>
+                <p style="margin: 10px;">|</p>
+                <p>Copyright @ 2022. Ajay Singh. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
 </html>

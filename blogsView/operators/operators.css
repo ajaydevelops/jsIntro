@@ -1,0 +1,40 @@
+h3 {
+    margin-top: 40px;
+}
+
+ul  {
+    margin-top: 40px;
+}
+
+li {
+    font-size: 22px;
+}
+
+.operators {
+    font-size: 25px;
+}
+
+.operator {
+    font-size: 25px;
+}
+
+#tableView { 
+    display: flex;
+    justify-content: center; 
+}
+
+table {
+    text-align: center;
+    border: 2px solid #fff;
+    box-shadow: #fff 0px 0px 8px;
+    width: 50%;
+    border-collapse: collapse;
+} 
+
+tr {
+    height: 30px;
+}
+
+td {
+    padding: 5px;
+}

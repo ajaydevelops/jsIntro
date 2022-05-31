@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Variables | Home</title>
+        <link href="../../home.css" rel="stylesheet">
+        <link href="../prism.css" rel="stylesheet">
+        <link href="../post.css" rel="stylesheet">
+        <link href="variables.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav id="headNav">
+                    <a id="headLinkA"  href="../../index.html">AS</a>
+                    <a id="headLinkB" href="../../blog.html">Blog</a>
+                </nav>   
+            </header>
+            <hr>
+            <div id="blogView">
+                <h1>Variables:</h1>
+                <div id="topContent" class="variablesView">
+                    <h3>What is variables:</h3>
+                    <p>Variables are a set of containers that store values.</p>
+                </div>
+                <div class="variablesView">
+                    <h3>Keywords:</h3> 
+                    <ul id="topUnOrdLs">
+                        <li>var</li> 
+                        <li>let</li> 
+                        <li>const</li> 
+                    </ul>
+                    <div class="keywordDets">
+                        <h4>var:</h4>
+                        <p><dfn>var:</dfn>&nbsp The var keyword is used to declare a variables. The scope of the var keyword is the function scope. The values of a variables with the var keyword can be  changed.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+function count(arr) {
+    var even = [];
+
+    for(var i=0; i < arr.length; i++) {
+        if(arr[i] % 2 === 0) {
+            even.push(arr[i]);
+            var evenArr = [...even]; 
+        }
+    }
+
+    console.log(evenArr);
+
+    evenArr = [12, 14, 16, 18, 20];
+    console.log(evenArr);
+}
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+count(arr);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js"> 
+// [2, 4, 6, 8, 10]
+// [12, 14, 16, 18, 20]
+                            </code>
+                        </pre>  
+                    </div>
+                    <div class="keywordDets">
+                        <h4>let:</h4>
+                        <p><dfn>let:</dfn>&nbsp The let keyword is used to declare a variables. The scope of the let keyword is the block scope. The values of a variables with the let keyword can be changed. The let keyword is a part of moden javaScript.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+function add() {
+    let a = 20;
+    let b = 30;
+
+    for(let i=0; i < 1; i++) {
+        let c = a + b;
+        console.log(c);
+        c = 60;
+        console.log(c);
+    }
+
+    console.log(c);
+}
+
+add();
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// 50
+// 60
+// error  
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="keywordDets">
+                        <h4>const:</h4>
+                        <p><dfn>const:</dfn>&nbsp The const keyword is used to declare a variables. The scope of the const keyword is the block scope. The values of a variables with the const keyword can't be changed. The const keyword is a part of moden javaScript.</p>
+                        <p class="example">Example:</p>
+                        <pre> 
+                            <code class="language-js"> 
+function sum(num1,num2) {
+
+    for(let i=0; i < 1; i++) {
+        const num = num1 + num2;
+        console.log(num);
+    }
+
+    console.log(num);
+}
+
+const num1 = 10;
+const num2 = 20;
+sum(num1, num2);
+                            </code> 
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js"> 
+// 30
+// error
+                            </code> 
+                        </pre>
+                    </div>  
+                </div>
+                <div class="variablesView">
+                    <h3>Need of variables:</h3>
+                    <p>Variables store the values.</p>
+                    <p class="example">Example:</p>
+                    <pre>
+                        <code class="language-js">
+var a = 10;
+let b = 20;
+const c = 30;
+
+console.log(a);
+console.log(b);
+console.log(c);
+                        </code>
+                    </pre>
+                    <p class="output">Output:</p>
+                    <pre>
+                        <code class="language-js">
+// 10
+// 20
+// 30
+                        </code>
+                    </pre>
+                </div>            
+                <div class="variablesView">
+                    <h3>Use of variables:</h3>
+                    <ul>
+                        <li>variables store all types of data values.</li>
+                        <li>The variables can be used multiple times.</li>
+                        <li>Can change the values of variables.</li>
+                        <li>Can also set the values of variables as constant.</li>
+                    </ul>
+                    <p class="example">Example:</p>
+                    <pre>
+                        <code class="language-js">
+var name = "amit";
+let age = 26;
+const isOld = true;
+var b;
+let c = null;
+const number = 2412n;
+
+var person = {
+    name: "dev",
+    age: 22,
+}
+
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof isOld);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof number);
+console.log(typeof person);
+console.log("I am " + name + ". I am " + age + " years old.");
+
+name = "arjun";
+console.log(name);
+
+age = 24;
+console.log(age);
+
+isOld = false
+console.log(isOld);
+                        </code>
+                    </pre>
+                    <p class="output">Output:</p>
+                    <pre>
+                        <code class="language-js">
+// string
+// number
+// boolean
+// undefined
+// object
+// bigint
+// object
+// I am amit. I am 26 years old.
+// arjun
+// 24
+// error 
+                        </code>
+                    </pre>
+                </div>    
+            </div>
+            <footer>
+                <nav id="footerNav">
+                    <a class="footerLinks" href="#">Linkedin</a>
+                    <a class="footerLinks" href="https://www.github.com/ajaydevelops" target="_blank">Github</a>
+                    <a class="footerLinks" href="https://www.twitter.com/ajaydevelops" target="_blank">Twitter</a>
+                </nav>
+                <p style="margin: 10px;">|</p>
+                <p>Copyright @ 2022. Ajay Singh. All rights reserved.</p>
+            </footer>
+        </div>
+        <script src="../prism.js"></script>
+    </body>
+</html>

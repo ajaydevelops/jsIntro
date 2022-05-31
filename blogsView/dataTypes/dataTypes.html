@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data types | Home</title>
+        <link href="../../home.css" rel="stylesheet">
+        <link href="../prism.css" rel="stylesheet">
+        <link href="../post.css" rel="stylesheet">
+        <link href="dataTypes.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav id="headNav">
+                    <a id="headLinkA"  href="../../index.html">AS</a>
+                    <a id="headLinkB" href="../../blog.html">Blog</a>
+                </nav>   
+            </header>
+            <hr>
+            <div id="blogView">
+                <h1>Data Types:</h1>
+                <div id="topContent" class="dataTypsVu">
+                    <h3>Types of data:</h3>
+                    <h4>Data Types in javaScript is divided into two categories:</h4>
+                    <div id="categories">
+                        <div>
+                            <h4 class="categorieHead">Primitive Data Types:</h4>
+                            <ul>
+                                <li>string</li>
+                                <li>number</li>
+                                <li>boolean</li>
+                                <li>undefined</li>
+                                <li>null</li>
+                                <li>bigint</li>
+                                <li>symbol</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="categorieHead">Non-primitive Data Types:</h4>
+                            <ul>
+                                <li>object</li>
+                                <li>array</li>
+                                <li>function</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dataTypsVu">
+                    <h3 class="dataTypsHead">Primitive Data Types:</h3>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">string:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let name = "amit";
+console.log(name);
+console.log(typeof name);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// amit
+// string
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">number:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let age = 25;
+console.log(age);
+console.log(typeof age);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// 25
+// number
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">boolean:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let isPrimitive = true;
+let isNonPrimitive = false;
+
+console.log(isPrimitive);
+console.log(typeof isPrimitive);
+
+console.log(isNonPrimitive);
+console.log(typeof isNonPrimitive);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// true
+// boolean
+// false
+// boolean
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">undefined:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let a;
+console.log(a);
+console.log(typeof a);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// undefined
+// undefined
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">null:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let b = null;
+console.log(b);
+console.log(typeof b);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// null
+// object
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">bigint:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let number = 2412n;
+console.log(number);
+console.log(typeof number);
+
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// 2412n
+// bigint
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp"> 
+                        <h4 class="dataTypName">symbol:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="dataTypsVu">
+                    <h3 class="dataTypsHead">Non-primitive Data Types:</h3>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">object:</h4>
+                        <p><dfn>object:</dfn>&nbsp Object is a container of key value pairs. Object store multiple key value pairs in single variable.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let person = {
+    name: "amit",
+    age: 25,
+    id: 201,
+    email: "amit25@gmail.com", 
+}
+
+console.log(person);
+console.log(typeof person);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// {name: "amit", age: 25, id: 201, email: "amit25@gmail.com"}
+// object
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">array:</h4>
+                        <p><dfn>array:</dfn>&nbsp Array is a container of elements. Array store multiple elements in single variable.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(arr);
+console.log(typeof arr);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// object
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="dataTyp">
+                        <h4 class="dataTypName">function:</h4>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+function add(a,b,c) {
+    let count = a + b + c;
+    return count;
+}
+
+let a = 10;
+let b = 20;
+let c = 30;
+console.log(add(a,b,c));
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// 60
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="dataTypsVu">
+                    <h3>Different between primitive data types and non-primitive data types:</h3>
+                    <div class="diff">
+                        <h4>Primitive Data Types:</h4>
+                        <p>Can change the value of the variable in the primitive data types but cannot assign the new value to the variable.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let a = 10;
+let b = 20;
+let sum = a + b;
+
+console.log(sum);
+a = 40;
+console.log(a);
+console.log(sum);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// 30
+// 40
+// 30
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="diff">
+                        <h4>Non-primitive Data Types:</h4>
+                        <p>Can assign new value to variable in non-primitive data types.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let thar = {
+    name: "mahindraThar",
+    company: "mahindra",
+    launchYear: 2022,
+}
+
+let tharA = thar;
+console.log(tharA);
+
+thar.launchYear = 2021;
+console.log(thar);
+console.log(tharA);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// {name: "mahindraThar", company: "mahindra", launchYear: 2022}
+// {name: "mahindraThar", company: "mahindra", launchYear: 2021}
+// {name: "mahindraThar", company: "mahindra", launchYear: 2021}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+                <div class="dataTypsVu">
+                    <h3>Need Of data types:</h3>
+                    <p>To define variables.</p>
+                    <p class="example">Example:</p>
+                    <pre>
+                        <code class="language-js">
+let name = "amit";
+let age = 20;
+let isYoung = true;
+
+console.log(name);
+console.log(age);
+console.log(isYoung);
+                        </code>
+                    </pre>
+                    <p class="output">Output:</p>
+                    <pre>
+                        <code class="language-js">
+// amit
+// 20
+// true
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <footer>
+                <nav id="footerNav">
+                    <a id="footerLinkA" class="footerLinks" href="#">Linkedin</a>
+                    <a class="footerLinks" href="https://www.github.com/ajaydevelops" target="_blank">Github</a>
+                    <a class="footerLinks" href="https://www.twitter.com/ajaydevelops" target="_blank">Twitter</a>
+                </nav>
+                <p style="margin: 10px;">|</p>
+                <p>Copyright @ 2022. Ajay Singh. All rights reserved.</p>
+            </footer>
+        </div>
+        <script src="../prism.js"></script>
+    </body>
+</html>

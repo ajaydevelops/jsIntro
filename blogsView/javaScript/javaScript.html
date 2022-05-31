@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javaScript | Home</title>
+        <link href="../../home.css" rel="stylesheet"> 
+        <link href="../prism.css" rel="stylesheet"> 
+        <link href="../post.css" rel="stylesheet"> 
+        <link href="javaScript.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav id="headNav">
+                    <a id="headLinkA"  href="../../index.html">AS</a>
+                    <a id="headLinkB" href="../../blog.html">Blog</a>
+                </nav>   
+            </header>
+            <hr>
+            <div id="blogView">
+                <h1>javaScript:</h1>
+                <div id="topContent" class="jsView">
+                    <h3>What is javaScript:</h3>
+                    <p>javaScript is a programming and synchronous language based on behavior.</p>
+                </div>
+                <div class="jsView">
+                    <h3>Need of javaScript:</h3>
+                    <p>To create web pages.</p>
+                </div>
+                <div class="jsView">
+                    <h3>Use of javaScript:</h3>
+                    <ul>
+                        <li>To create mobile applications.</li>
+                        <li>To create desktop applications.</li>
+                    </ul>
+                </div>
+                <div class="jsView">
+                    <h3>There are two ways to add javaScript inside HTML file:</h3>
+                    <ul>
+                        <li>Internal.</li>
+                        <li>External.</li>
+                    </ul>
+                    <div class="addjs">
+                        <h4>Adding internal javaScript inside HTML file:</h4>
+                        <p>To add internal javaScript inside the HTML file, script tag is used inside the head tag. Internal javaScript can only be added inside a HTML file. Can't reuse internal javaScript.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-html">
+&lt;html>
+    &lt;head>
+        &lt;title>Internal javaScript&lt;/title>
+        &lt;script>
+            let p = document.getElementsByTagName("p");
+            p.style.color = "green";
+        &lt;/script>
+    &lt;/head>
+    &lt;body>
+        &lt;p>Internal javaScript can only be added inside a HTML file.&lt;/p>
+    &lt;/body>  
+&lt;/html>
+                            </code>
+                        </pre> 
+                    </div>
+                    <div class="addjs">
+                        <h4>Adding external javaScript inside HTML file:</h4>
+                        <p>To add external javaScript inside the HTML file, script tag is used inside the body tag. External javaScript can be added inside multiple HTML files. Can reuse external javaScript.</p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-html">
+&lt;html>
+    &lt;head>
+        &lt;title>External javaScript&lt;/title>
+    &lt;/head>
+    &lt;body>
+        &lt;p>External javaScript can be added inside multiple HTML files.&lt/p>
+        &lt;script src="javaScript.js">&lt;/script>
+    &lt;/body>
+&lt;/html>
+                            </code>
+                        </pre>
+                    </div>
+                </div>            
+            </div>
+            <footer>
+                <nav id="footerNav">
+                    <a id="footerLinkA" class="footerLinks" href="#">Linkedin</a>
+                    <a class="footerLinks" href="https://www.github.com/ajaydevelops" target="_blank">Github</a>
+                    <a class="footerLinks" href="https://www.twitter.com/ajaydevelops" target="_blank">Twitter</a>
+                </nav>
+                <p style="margin: 10px;">|</p>
+                <p>Copyright @ 2022. Ajay Singh. All rights reserved.</p>
+            </footer>
+        </div>
+        <script src="../prism.js"></script>
+    </body>
+</html>

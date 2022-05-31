@@ -1,0 +1,46 @@
+#blogView {
+    margin-top: 100px;
+}
+
+#topContent {
+    margin-top: 60px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 22px;
+    text-align: center;
+    color: rgb(228, 228, 29);
+}
+
+dfn {
+    font-weight: bold;
+    color: rgb(228, 228, 29);
+}
+
+.example {
+    color: #f61101;
+    font-weight: bold;
+}
+
+pre[class*=language-] {
+    border: 2px solid #fff;
+    padding: 0px 20px;
+}
+
+code[class*=language-], pre[class*=language-] {
+    line-height: unset;
+}
+
+.output {
+    font-weight: bold;
+    color: #e69502;
+}
