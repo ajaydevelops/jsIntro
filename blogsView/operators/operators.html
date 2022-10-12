@@ -1,140 +1,832 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operator | Home</title>
-    <link href="../../home.css" rel="stylesheet">
-    <link href="../prism.css" rel="stylesheet">
-    <link href="../post.css" rel="stylesheet">
-    <link href="operator.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="container">
-        <header>
-            <nav id="headNav">
-                <a id="headLinkA"  href="../../index.html">AS</a>
-                <a id="headLinkB" href="../../blog.html">Blog</a>
-            </nav>   
-        </header>
-        <hr>
-        <div id="blogView">
-            <h1>Operators:</h1>
-            <h3>Types of operators in javaScript</h3>
-            <ul>
-                <li>Arithmetic Operators</li>
-                <li>Assignment Operators</li>
-                <li>Comparison Operators</li>
-                <li>Logical or Boolean Operators</li>
-            </ul>
-            <p class="operators">Arithmetic Operators:</p>
-            <p><dfn>Arithmetic Operators: </dfn>&nbsp Arithmetic operators ka use mathematical operation ke lie kya jaata hai.</p>
-            <div id="tableView">
-                <table border="2">
-                    <thead>
-                        <tr>
-                            <th>Operator</th>
-                            <th>Operator Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="1"></td>
-                            <td colspan="1"></td>
-                        </tr>
-                        <tr>
-                            <td class="operator">+</td>
-                            <td>Addition</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">-</td>
-                            <td>Subtraction</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">*</td>
-                            <td>Multiplication</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">/</td>
-                            <td>Division</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">%</td>
-                            <td>Modulus</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">++i</td>
-                            <td>Pre Increment</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">i++</td>
-                            <td>Post Increment</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">--i</td>
-                            <td>Pre Decrement</td>
-                        </tr>
-                        <tr>
-                            <td class="operator">i--</td>
-                            <td>Post Decrement</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p class="example">Example:</p>
-            <pre>
-                <code class="language-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Operators | Home</title>
+        <link href="../../home.css" rel="stylesheet">
+        <link href="../prism.css" rel="stylesheet">
+        <link href="../post.css" rel="stylesheet">
+        <link href="operators.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav id="headNav">
+                    <a id="headLinkA"  href="../../index.html">AS</a>
+                    <a id="headLinkB" href="../../blog.html">Blog</a>
+                </nav>   
+            </header>
+            <hr>
+            <div id="blogVu">
+                <h1>Operators:</h1>
+                <div id="topContent" class="operatorsVu">
+                    <h3>What is operators:</h3>
+                    <p>Operators are symbol that performs operations.</p>
+                </div>
+                <div class="operatorsVu">
+                    <h3>Need of operators:</h3>
+                    <p>To performs operations.</p>
+                </div>
+                <div class="operatorsVu">
+                    <h3>Type of operator:</h3>
+                    <ul>
+                        <li>Assignment Operators</li>
+                        <li>Arithmetic Operators</li>
+                        <li>Comparison Operators</li>
+                        <li>Logical or Boolean Operators</li>
+                        <li>String Operators</li>
+                    </ul>
+                    <div class="operators">
+                        <h4>Assignment Operators:</h4>
+                        <p><dfn>Assignment Operators:</dfn>&nbsp <b>Assignment Operators</b> performs assignment operations between two operands.</p>
+                        <div class="tableVu">
+                            <table border="2">
+                                <thead>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Operator Name</th>
+                                        <th>Example</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="empty">
+                                        <td colspan="4"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>=</td>
+                                        <td>Equal</td>
+                                        <td>x = y</td>
+                                        <td>x = y</td>
+                                    </tr>
+                                    <tr>
+                                        <td>+=</td>
+                                        <td>Addition equal</td>
+                                        <td>x += y</td>
+                                        <td>x = x + y</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-=</td>
+                                        <td>Substraction equal</td>
+                                        <td>x -= y</td>
+                                        <td>x = x - y</td>
+                                    </tr>
+                                    <tr>
+                                        <td>*=</td>
+                                        <td>Multiplication equal</td>
+                                        <td>x *= y</td>
+                                        <td>x = x * y</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/=</td>
+                                        <td>Division equal</td>
+                                        <td>x /= y</td>
+                                        <td>x = x / y</td>
+                                    </tr>
+                                    <tr>
+                                        <td>%=</td>
+                                        <td>Modulus equal</td>
+                                        <td>x %= y</td>
+                                        <td>x = x % y</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let x = 20;
+let y = 10;
+console.log(x, y);
+
+x += y;
+console.log(x);
+
+x -= y;
+console.log(x);
+
+x *= y;
+console.log(x);
+
+x /= y;
+console.log(x);
+
+x %= y;
+console.log(x);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// 20 10
+// 30
+// 20
+// 200
+// 20
+// 0
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="operators">
+                        <h4>Arithmetic Operators:</h4>
+                        <p><dfn>Arithmetic Operators:</dfn>&nbsp <b>Arithmetic Operators</b> performs mathematical operations between two operands.</p>
+                        <div class="tableVu">
+                            <table border="2">
+                                <thead>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Operator Name</th>
+                                        <th>Example</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="empty">
+                                        <td colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>+</td>
+                                        <td>Addition</td>
+                                        <td>a + b</td>
+                                    </tr>
+                                    <tr>
+                                        <td>-</td>
+                                        <td>Substraction</td>
+                                        <td>a - b</td>
+                                    </tr>
+                                    <tr>
+                                        <td>*</td>
+                                        <td>Multiplication</td>
+                                        <td>a * b</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/</td>
+                                        <td>Division</td>
+                                        <td>a / b</td>
+                                    </tr>
+                                    <tr>
+                                        <td>%</td>
+                                        <td>Modulus</td>
+                                        <td>a % b</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">++</td>
+                                        <td>Pre-Increment</td>
+                                        <td>++a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post-Increment</td>
+                                        <td>b++</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">--</td>
+                                        <td>Pre-Decrement</td>
+                                        <td>--a</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post-Decrement</td>
+                                        <td>b--</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
 let a = 10;
-let b = 2;
-let c;
+let b = 5;
+let addition = a + b;
+console.log(addition);
 
-c = a + b;
+let substraction = a - b;
+console.log(substraction);
+
+let multiplication = a * b;
+console.log(multiplication);
+
+let division = a / b;
+console.log(division);
+
+let modulus = a % b;
+console.log(modulus);
+
+++a;
+let preIncrement = a;
+console.log(preIncrement);
+
+b++;
+let postIncrement = b;
+console.log(postIncrement);
+
+--a;
+let preDecrement = a;
+console.log(preDecrement);
+
+b--;
+let postDecrement = b;
+console.log(postDecrement);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// 15
+// 5
+// 50
+// 2
+// 0
+// 11
+// 6
+// 10
+// 5
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="operators">
+                        <h4>Comparison Operators:</h4>
+                        <p>
+                            <dfn>Comparison Operators:</dfn>&nbsp <b>Comparison Operators</b> performs comparison operations between two operands and returns a boolean value.
+                            If the Condition is true then the <b>Comparison Operators</b> returns true and if the condition is false then the <b>Comparison Operators</b> returns false.  
+                        </p>
+                        <div class="tableVu">
+                            <table border="2">
+                                <thead>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Operator Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="empty">
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>==</td>
+                                        <td>Equal to</td>
+                                    </tr>
+                                    <tr>
+                                        <td>===</td>
+                                        <td>Equal to and Same type</td>
+                                    </tr>
+                                    <tr>
+                                        <td>!=</td>
+                                        <td>Not equal to</td>
+                                    </tr>
+                                    <tr>
+                                        <td>!==</td>
+                                        <td>Not equal to or Not same type</td>
+                                    </tr>
+                                    <tr>
+                                        <td>></td>
+                                        <td>Greater than</td>
+                                    </tr>
+                                    <tr>
+                                        <td>>=</td>
+                                        <td>Greater than or Equal to</td>
+                                    </tr>
+                                    <tr>
+                                        <td><</td>
+                                        <td>Less than</td>
+                                    </tr>
+                                    <tr>
+                                        <td><=</td>
+                                        <td>Less than or Equal to</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div >
+                        <div class="comparisonOperator">
+                            <h5>Equal to Operator(==):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">Equal to Operator:</dfn>&nbsp If the both operands of <b>Equal to Operator</b> are equal then the <b>Equal to Operator</b>
+                                returns true otherwise returns false.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let x = 10;
+let y = 10;
+let z = x == y;
+console.log(z);
+
+y = 20;
+z = x == y;
+console.log(z);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js">
+// true
+// false
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="comparisonOperator">
+                            <h5>Equal to and Same type Operator(===):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">Equal to and Same type Operator:</dfn>&nbsp If the both operands of <b>Equal to and Same type Operator</b> are equal and have the
+                                same type, then the <b>Equal to and Same type Operator</b> returns true otherwise returns false.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let x = 10;
+let y = 10;
+
+console.log(typeof x);
+console.log(typeof y);
+
+let z = x === y;
+console.log(z);
+
+x = "10";
+console.log(typeof x);
+
+z = x === y;
+console.log(z);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js">
+// number
+// number
+// true
+// string
+// false
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="comparisonOperator">
+                            <h5>Not equal to Operator(!=):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">Not equal to Operator:</dfn>&nbsp If the both operands of <b>Not equal to Operator</b> are not equal then the <b>Not equal to Operator</b>
+                                returns true otherwise returns false.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let x = 10;
+let y = 20;
+let z = x != y;
+console.log(z);
+
+y = 10;
+z = x != y;
+console.log(z);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js"> 
+// true
+// false
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="comparisonOperator">
+                            <h5>Not equal to or Not same type Operator(!==):</h5>
+                            <div class="condition">
+                                <h6>Condition A:</h6>
+                                <p>
+                                    If the both operands of <b>Not equal to or Not same type Operator</b> are not equal and their types are also not the same, then the
+                                    <b>Not equal to or Not same type Operator</b> returns true otherwise returns false.
+                                </p>
+                                <p class="example">Example:</p>
+                                <pre>
+                                    <code class="language-js">
+let x = 10;
+let y = "20";
+
+console.log(typeof x);
+console.log(typeof y);
+
+let z = x !== y;
+console.log(z);
+
+x = "20"
+console.log(typeof x);
+
+z = x !== y;
+console.log(z);
+                                    </code>
+                                </pre>
+                                <p class="output">Output:</p>
+                                <pre>
+                                    <code class="language-js">
+// number
+// string
+// true
+// string
+// false
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="condition">
+                                <h6>Condition B:</h6>
+                                <p>
+                                    If the both operands of <b>Not equal to or Not same type Operator</b> are equal but their types are not the same, then the <b>Not equal to or Not same type Operator</b> returns true otherwise returns false.
+                                </p>
+                                <p class="example">Example:</p>
+                                <pre>
+                                    <code class="language-js">
+let x = 10;
+let y = "10";
+
+console.log(typeof x);
+console.log(typeof y);
+
+let z = x !== y;
+console.log(z);
+
+x = "10";
+console.log(typeof x);
+
+z = x !== y;
+console.log(z);
+                                    </code>
+                                </pre>
+                                <p class="output">Output:</p>
+                                <pre>
+                                    <code class="language-js">
+// number
+// string
+// true
+// string
+// false
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="condition">
+                                <h6>Condition C:</h6>
+                                <p>
+                                    If the both operands of <b>Not equal to or Not same type Operator</b> are not equal but their types are the same, then the
+                                    <b>Not equal to or Not same type Operator</b> returns true otherwise returns false.
+                                </p>
+                                <p class="example">Example:</p>
+                                <pre>
+                                    <code class="language-js">
+let x = 50;
+let y = 100;
+
+console.log(typeof x);
+console.log(typeof y);
+
+let z = x !== y;
+console.log(z);
+
+y = 50;
+console.log(typeof y);
+
+z = x !== y;
+console.log(z);
+                                    </code>
+                                </pre>
+                                <p class="output">Output:</p>
+                                <pre>
+                                    <code class="language-js">
+// number
+// number
+// true
+// number
+// false
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <div class="comparisonOperator">
+                            <h5>Greater than Operator(>):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">Greater than Operator :</dfn>&nbsp If the value of the left operand of <b>Greater than Operator</b>
+                                is greater than the value of the right operand of <b>Greater than Operator</b> then the <b>Greater than Operator</b> returns true 
+                                otherwise returns false.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let x = 20;
+let y = 10;
+let z = x > y;
+console.log(z);
+
+x = 5;
+z = x > y;
+console.log(z);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js">
+// true
+// false
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="comparisonOperator">
+                            <h5>Greater than or Equal to Operator(>=):</h5>
+                            <div class="condition">
+                                <h6>condition A:</h6>
+                                <p>
+                                    If the value of the left operand of <b>Greater than or Equal to Operator</b> is greater than the value of the right operand of
+                                    <b>Greater than or Equal to Operator,</b> then the <b>Greater than or Equal to Operator</b> returns true otherwise returns false.
+                                </p>
+                                <p class="example">Example:</p>
+                                <pre>
+                                    <code class="language-js">
+let x = 10;
+let y = 5;
+let z = x >= y;
+console.log(z);
+
+y = 15;
+z = x >= y;
+console.log(z);
+                                    </code>
+                                </pre>
+                                <p class="output">Output:</p>
+                                <pre>
+                                    <code class="language-js">
+// true
+// false
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="condition">
+                                <h6>Condition B:</h6>
+                                <p>
+                                    If the value of the left operand of <b>Greater than or Equal to Operator</b> is equal the value of the right operand of 
+                                    <b>Greater than or Equal to Operator,</b> then the <b>Greater than or Equal to Operator</b> returns true otherwise returns false.
+                                </p>
+                                <p class="example">Example:</p>
+                                <pre>
+                                    <code class="language-js">
+let x = 10;
+let y = 10;
+let z = x >= y;
+console.log(z);
+
+y = 20;
+z = x >= y;
+console.log(z);
+                                    </code>
+                                </pre>
+                                <p class="output">Output:</p>
+                                <pre>
+                                    <code class="language-js">
+// true
+// false
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                        <div class="comparisonOperator">
+                            <h5>Less than Operator(<):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">Less than Operator:</dfn>&nbsp If the value of the left operand of <b>Less than Operator</b> is less than
+                                the value of the right operand of <b>Less than Operator</b> then the <b>Less than Operator</b> returns true otherwise returns false.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let x = 5;
+let y = 10;
+let z = x < y;
+console.log(z);
+
+x = 15;
+z = x < y;
+console.log(z);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js">
+// true 
+// false
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="comparisonOperator">
+                            <h5>Less than or Equal to Operator(<=):</h5>
+                            <div class="condition">
+                                <h6>Condition A:</h6>
+                                <p>
+                                    If the value of the left operand of <b>Less than or Equal to Operator</b> is less than the value of the right operand of 
+                                    <b>Less than or Equal to Operator,</b> then the <b>Less than or Equal to Operator</b> returns true otherwise returns false.
+                                </p>
+                                <p class="example">Example:</p>
+                                <pre>
+                                    <code class="language-js">
+let x = 20;
+let y = 40;
+let z = x <= y;
+console.log(z);
+
+y = 15;
+z = x <= y;
+console.log(z);
+                                    </code>
+                                </pre>
+                                <p class="output">Output:</p>
+                                <pre>
+                                    <code class="language-js">
+// true
+// false
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="condition">
+                                <h6>Condition B:</h6>
+                                <p>
+                                    If the value of the left operand of <b>Less than or Equal to Operator</b> is equal the value of the right operand of 
+                                    <b>Less than or Equal to Operator,</b> then the <b>Less than or Equal to Operator</b> returns true otherwise returns false.
+                                </p>
+                                <p class="example">Example:</p>
+                                <pre>
+                                    <code class="language-js">
+let x = 60;
+let y = 60;
+let z = x <= y;
+console.log(z);
+
+x = 70;
+z = x <= y;
+console.log(z);
+                                    </code>
+                                </pre>
+                                <p class="output">Output:</p>
+                                <pre>
+                                    <code class="language-js">
+// true
+// false
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="operators">
+                        <h4>Logical or Boolean Operators:</h4>
+                        <p>
+                            <dfn>Logical or Boolean Operators:</dfn>&nbsp <b>Logical or Boolean Operators</b> performs logical or boolean operations between two operands 
+                            and returns a boolean value. If the Condition is true then the <b>Logical or Boolean Operators</b> returns true and if the condition is false
+                            then the <b>Logical or Boolean Operators</b> returns false. 
+                        </p>
+                        <div class="tableVu">
+                            <table border="2">
+                                <thead>
+                                    <tr>
+                                        <th>Operator</th>
+                                        <th>Operator Name</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="empty">
+                                        <td colspan="2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>&&</td>
+                                        <td>AND</td>
+                                    </tr>
+                                    <tr>
+                                        <td>||</td>
+                                        <td>OR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>!</td>
+                                        <td>NOT</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="LogicalOperator">
+                            <h5>AND Operator(&&):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">AND Operator:</dfn>&nbsp If the both operands of <b>AND Operator</b> are true then the <b>And Operator</b> returns true otherwise
+                                returns false.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let a = 25;
+let b = 15;
+let c = 25;
+let d = (a > b) && (a == c);
+console.log(d);
+
+a = 24;
+d = (a > b) && (a == c);
+console.log(d);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js">
+// true
+// false
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="logicalOperator">
+                            <h5>OR Operator(||):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">OR Operator:</dfn>&nbsp If the both operands of <b>OR Operator</b> are true or one of the both
+                                operands be true then the <b>OR Operator</b> returns true otherwise returns false.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let a = 10;
+let b = 20;
+let c = 30;
+let d = (a <= b) || (b != c);
+console.log(d);
+
+c = 20;
+d = (a <= b) || (b != c);
+console.log(d);
+
+a = 25;
+d = (a <= b) || (b != c);
+console.log(d);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js">
+// true
+// true
+// false
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="logicalOperator">
+                            <h5>NOT Operator(!):</h5>
+                            <p>
+                                <dfn class="childOperatorDefinationName">NOT Operator:</dfn>&nbsp <b>NOT Operator</b> has single operand if operand is true then the 
+                                <b>NOT Operator</b> returns false and if operand is false then the <b>NOT Operator</b> returns true.
+                            </p>
+                            <p class="example">Example:</p>
+                            <pre>
+                                <code class="language-js">
+let a = 10;
+let b = 10;
+let c = (a === b);
 console.log(c);
 
-c = a - b;
+c = (! a === b);
 console.log(c);
 
-c = a * b;
-console.log(c);
+                                </code>
+                            </pre>
+                            <p class="output">Output:</p>
+                            <pre>
+                                <code class="language-js">
+// true
+// false
 
-c = a / b;
-console.log(c);
-
-c = a % b;
-console.log(c);
-
-++c;
-console.log(c);
-
-c++;
-console.log(c);
-
---c;
-console.log(c);
-
-c--;
-console.log(c);
-                </code>
-            </pre>
-            <p class="output">Output:</p>
-            <pre>
-                <code class="language-js">
-
-                </code>
-            </pre>
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="operators">
+                        <h4>String Operators(+):</h4>
+                        <p>
+                            <dfn>String Operators:</dfn>&nbsp <b>String Operators</b> performs string operations between two operands, one of which operand is string 
+                            value and the other operand is string value or other data types value. <b>String Operators</b> concatenate the operands values inside the
+                            single string.
+                        </p>
+                        <p class="example">Example:</p>
+                        <pre>
+                            <code class="language-js">
+let name = "amit";
+let age = 26;
+let isYoung = true;
+let stringOperators = name + age + isYoung;
+console.log(stringOperators);
+                            </code>
+                        </pre>
+                        <p class="output">Output:</p>
+                        <pre>
+                            <code class="language-js">
+// amit26true
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <nav id="footerNav">
+                    <a id="footerLinkA" class="footerLinks" href="#">Linkedin</a>
+                    <a class="footerLinks" href="https://www.github.com/ajaydevelops" target="_blank">Github</a>
+                    <a class="footerLinks" href="https://www.twitter.com/ajaydevelops" target="_blank">Twitter</a>
+                </nav>
+                <p style="margin: 10px;">|</p>
+                <p>Copyright @ 2022. Ajay Singh. All rights reserved.</p>
+            </footer>
         </div>
-        <footer>
-            <nav id="footerNav">
-                <a class="footerLinks" href="#">Linkedin</a>
-                <a class="footerLinks" href="https://www.github.com/ajaydevelops" target="_blank">Github</a>
-                <a class="footerLinks" href="https://www.twitter.com/ajaydevelops" target="_blank">Twitter</a>
-            </nav>
-            <p style="margin: 10px;">|</p>
-            <p>Copyright @ 2022. Ajay Singh. All rights reserved.</p>
-        </footer>
-    </div>
-    <script src="../prism.js"></script>
-</body>
+        <script src="../prism.js"></script>
+    </body>
 </html>

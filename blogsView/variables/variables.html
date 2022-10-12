@@ -20,13 +20,13 @@
                 </nav>   
             </header>
             <hr>
-            <div id="blogView">
+            <div id="blogVu">
                 <h1>Variables:</h1>
-                <div id="topContent" class="variablesView">
+                <div id="topContent" class="variablesVu">
                     <h3>What is variables:</h3>
                     <p>Variables are a set of containers that store values.</p>
                 </div>
-                <div class="variablesView">
+                <div class="variablesVu">
                     <h3>Keywords:</h3> 
                     <ul id="topUnOrdLs">
                         <li>var</li> 
@@ -41,6 +41,7 @@
                             <code class="language-js">
 function count(arr) {
     var even = [];
+    console.log(even);
 
     for(var i=0; i < arr.length; i++) {
         if(arr[i] % 2 === 0) {
@@ -62,6 +63,7 @@ count(arr);
                         <p class="output">Output:</p>
                         <pre>
                             <code class="language-js"> 
+// []
 // [2, 4, 6, 8, 10]
 // [12, 14, 16, 18, 20]
                             </code>
@@ -76,6 +78,7 @@ count(arr);
 function add() {
     let a = 20;
     let b = 30;
+    console.log(a, b);
 
     for(let i=0; i < 1; i++) {
         let c = a + b;
@@ -93,6 +96,7 @@ add();
                         <p class="output">Output:</p>
                         <pre>
                             <code class="language-js">
+// 20 30
 // 50
 // 60
 // error  
@@ -129,31 +133,31 @@ sum(num1, num2);
                         </pre>
                     </div>  
                 </div>
-                <div class="variablesView">
+                <div class="variablesVu">
                     <h3>Need of variables:</h3>
-                    <p>Variables store the values.</p>
+                    <p>To store values.</p>
                     <p class="example">Example:</p>
                     <pre>
                         <code class="language-js">
-var a = 10;
-let b = 20;
-const c = 30;
-
-console.log(a);
-console.log(b);
-console.log(c);
+let name = "ayush";
+let age = 23;
+let isYoung = true;
+                            
+console.log(name);
+console.log(age);
+console.log(isYoung);                            
                         </code>
                     </pre>
                     <p class="output">Output:</p>
                     <pre>
                         <code class="language-js">
-// 10
-// 20
-// 30
+// ayush
+// 23
+// true
                         </code>
                     </pre>
                 </div>            
-                <div class="variablesView">
+                <div class="variablesVu">
                     <h3>Use of variables:</h3>
                     <ul>
                         <li>variables store all types of data values.</li>

@@ -7,21 +7,29 @@
     justify-content: space-around;
 }
 
-.categorieHead {
-    font-size: 20px;
+.categorieName {
     margin-top: 0px;
     color: #fff;
 }
 
-.dataTypsHead {
-    text-align: left;
+ul {
+    margin-bottom: 0px;
 }
 
 .dataTyp {
     margin-top: 60px;
 }
 
-.dataTypName {
+.dataTypsHead {
+    text-align: left;
+    color: #fff;
+}
+
+.data {
+    margin-top: 60px;
+}
+
+.dataName {
     font-size: 30px;
 }
 
