@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filters</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h3 class="projectTitle">Filter:</h3>
+    <div id="container">
+      <aside>
+        <input id="input" type="search" name="items" placeholder="Search..." />
+        <h6>Company :</h6>
+        <div id="buttons">
+          <button data-id="all" id="allBtn">All</button>
+          <button data-id="ikea" id="ikBtn">Ikea</button>
+          <button data-id="marcos" id="marBtn">Marcos</button>
+          <button data-id="caressa" id="carBtn">Caressa</button>
+          <button data-id="liddy" id="liBtn">Liddy</button>
+        </div>
+      </aside>
+      <div id="mainContent"></div>
+    </div>
+    <script src="products.js"></script>
+  </body>
+</html>

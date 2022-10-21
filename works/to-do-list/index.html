@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To do list</title>
+    <link href="../main.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/dc7cc6e809.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h3 class="projectTitle">TODO List:</h3>
+    <div id="container">
+      <h2>Search TODO'S:</h2>
+      <form id="search">
+        <input type="text" name="search" placeholder="Search todos..." />
+      </form>
+      <ul id="items">
+        <li>
+          Apple
+          <button class="fa-solid fa-trash-can delete"></button>
+        </li>
+        <li>
+          Mango
+          <button class="fa-solid fa-trash-can delete"></button>
+        </li>
+        <li>
+          Banana
+          <button class="fa-solid fa-trash-can delete"></button>
+        </li>
+      </ul>
+      <form id="add">
+        <label>Add a new todo....</label>
+        <input type="text" name="add" />
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>

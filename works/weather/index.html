@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather</title>
+    <link href="../main.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="container">
+      <h3 class="projectTitle">Weather:</h3>
+      <div id="mainView">
+        <form id="cityForm">
+          <label for="name">Enter a location for weather information:</label>
+            <div id="input">
+              <input type="text" name="city"></input>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </label>
+        </form>
+      </div>
+      <div id="card" class="det">
+        <img id="weatImg" src="https://via.placeholder.com/400X300" />
+        <div id="icon">
+          <img />
+        </div>
+        <div id="details">
+          <p>city name</p>
+          <p>Weather Condition</p>
+          <div>
+            <span>temperature</span>
+            <span>&deg; C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/dc7cc6e809.js" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,94 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9A0680;
+  height: 697px;
+}
+
+.projectTitle {
+  margin-top: 0px;
+}
+
+h3 {
+  color: #fff;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  color: #fff;
+  border: 2px solid #fff;
+  background-color: #160040;
+  width: 15%;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 20px;
+} 
+
+#search {
+  margin-top: 15px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+}
+
+input {
+  color: teal;
+  font-weight: bold;
+  margin-top:5px;
+  padding: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: unset;
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 20px 0px 0px 0px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: teal;
+  font-weight: bold;
+  width: 150px;
+  margin: 15px 0px 0px 0px;
+  padding: 0px 10px
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 0px;
+  margin: 0px;
+}
+
+li :hover {
+  box-shadow: unset;
+}
+
+#add {
+  margin-top: 30px;
+}
+
+.filtered {
+  display: none;
+}
+

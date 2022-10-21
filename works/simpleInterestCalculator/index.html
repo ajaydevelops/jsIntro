@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intrest-calulator</title>
+    <link href="../main.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300&family=Kumbh+Sans&family=Montserrat:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <h3 class="projectTitle">SimpleInterestCalculator:</h3>
+        <div id="innerView">
+            <h2>Calculator:</h2>
+            <form>
+                <label>Principal:</label>
+                <input id="principal" type="number" name="principal" placeholder="Enter principal ..." required/>
+                <label>Interest:</label>
+                <input id="interest" type="number" name="interest" placeholder="Enter interest ..." required/>
+                <label>Time:</label>
+                <input id="time" type="number" name="time" placeholder="Enter time.."required />
+                <input id="btn" type="submit" value="Submit"/>
+            </form>
+            <div id="amountView">
+                <p id="simpleInterest"></p>
+                <p id="totalAmount"></p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
