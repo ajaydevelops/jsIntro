@@ -141,3 +141,74 @@ footer {
     border-radius: 5px 5px 5px 5px;
     margin-left: 10px;
 } 
+
+@media(max-width:768px) {
+
+    #container {
+        width: 80%;
+    }
+
+    #headRightLinkA {
+        margin-right: 0px;
+    }
+
+    #topView {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #topLfView {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    #topRtView {
+        margin-top: 20px;
+        height: 150px;
+        width: 150px;
+        align-self: center;
+    }
+
+    #topNav {
+        justify-content: center;
+    }
+
+    #centerView {
+        margin-top: 30px;
+    }
+
+    #centerNav {
+        margin-top: 0px;
+    }
+
+    #para {
+        margin-top: 40px;
+    }
+
+    #bottomView {
+        margin-top: 40px;
+    }
+
+    .interest {
+        margin-top: 0px;
+    }
+
+    footer {
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footerParaA {
+        display: none;
+    }
+}

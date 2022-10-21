@@ -11,4 +11,32 @@
     padding: 5px 25px;
 }
 
+@media(max-width:768px){
 
+    #headRightLinkA {
+        margin-right: 0px;
+    }
+
+    #blogs {
+        margin-top: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    footer {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .footerPara {
+        margin: 0px;
+        text-align: center;
+    }
+}
