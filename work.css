@@ -50,4 +50,9 @@ footer {
         margin-bottom: 20px;
         width: 70%;
     }
+
+    .gitIcon {
+        height: 15px;
+        width: 15px;
+    }
 }
